@@ -4,7 +4,7 @@ using System.IO;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class LanguageDataBase : MonoBehaviour
+public class LanguageDataBase : MonoBehaviour, IInitializer
 {
     public static LanguageDataBase Instance { get; private set; }
 
@@ -14,6 +14,7 @@ public class LanguageDataBase : MonoBehaviour
     public string selectedLanguage = "en";
 
     private Dictionary<string, Dictionary<string, string>> _translations;
+    public bool IsInitialized { get; private set; }
 
     private void Awake()
     {
@@ -36,6 +37,7 @@ public class LanguageDataBase : MonoBehaviour
         {
             LoadLocalData();
         }
+        IsInitialized = true;
     }
     private async Task UpdateFile()
     {
