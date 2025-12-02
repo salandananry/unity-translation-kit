@@ -861,6 +861,7 @@ GameObject:
   - component: {fileID: 813983004}
   - component: {fileID: 813983006}
   - component: {fileID: 813983005}
+  - component: {fileID: 813983007}
   m_Layer: 5
   m_Name: '#1 (No Error)'
   m_TagString: Untagged
@@ -987,6 +988,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813983003}
   m_CullTransparentMesh: 1
+--- !u!114 &813983007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813983003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2502a901e2efe3f40a24dca2dd7d77c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TranslateText
+  translationKey: hello_key
+  fallback: Hello (Fallback)
 --- !u!1 &889387550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,7 +1220,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 901353355}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1910936468}
+        m_TargetAssemblyTypeName: LanguageSelector, Assembly-CSharp
+        m_MethodName: ChangeLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: jp
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &901353355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1817,6 +1844,7 @@ GameObject:
   - component: {fileID: 1170252897}
   - component: {fileID: 1170252899}
   - component: {fileID: 1170252898}
+  - component: {fileID: 1170252900}
   m_Layer: 5
   m_Name: '#2 (Missing Translation)'
   m_TagString: Untagged
@@ -1943,6 +1971,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170252896}
   m_CullTransparentMesh: 1
+--- !u!114 &1170252900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170252896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2502a901e2efe3f40a24dca2dd7d77c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TranslateText
+  translationKey: hello_key_missing_translation
+  fallback: Hello (Fallback)
 --- !u!1 &1348384299
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,7 +2106,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1484371966}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1910936468}
+        m_TargetAssemblyTypeName: LanguageSelector, Assembly-CSharp
+        m_MethodName: ChangeLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: es
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1484371966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2185,7 +2239,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1770310859}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1910936468}
+        m_TargetAssemblyTypeName: LanguageSelector, Assembly-CSharp
+        m_MethodName: ChangeLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: kr
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1770310859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2480,7 +2546,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1908435704}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1910936468}
+        m_TargetAssemblyTypeName: LanguageSelector, Assembly-CSharp
+        m_MethodName: ChangeLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: en
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1908435704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2528,6 +2606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1910936467}
+  - component: {fileID: 1910936468}
   m_Layer: 5
   m_Name: Selections
   m_TagString: Untagged
@@ -2558,6 +2637,18 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000030517578, y: 163.23898}
   m_SizeDelta: {x: 1668.4762, y: 182.7807}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1910936468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910936466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b012f97bd4c9b49844342d8d0fb0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LanguageSelector
 --- !u!1 &1977744303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2569,6 +2660,7 @@ GameObject:
   - component: {fileID: 1977744304}
   - component: {fileID: 1977744306}
   - component: {fileID: 1977744305}
+  - component: {fileID: 1977744307}
   m_Layer: 5
   m_Name: '#2 (Missing Key)'
   m_TagString: Untagged
@@ -2695,6 +2787,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977744303}
   m_CullTransparentMesh: 1
+--- !u!114 &1977744307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977744303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2502a901e2efe3f40a24dca2dd7d77c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TranslateText
+  translationKey: 
+  fallback: Hello (Fallback)
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
