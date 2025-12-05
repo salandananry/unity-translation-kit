@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,3 +24,4 @@ public class AutoBootstrapper
         SceneManager.LoadScene(BootstrapSceneName, LoadSceneMode.Single);
     }
 }
+#endif
