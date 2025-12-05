@@ -8,11 +8,17 @@ public class InitializeManager : MonoBehaviour
 {
     [SerializeField] private List<MonoBehaviour> initializerScripts = new List<MonoBehaviour>();
 
+#if UNITY_EDITOR
     private string nextSceneName;
+#else
+    private string nextSceneName = "MainMenu";
+#endif
 
     private void Start()
     {
+#if UNITY_EDITOR
         nextSceneName = AutoBootstrapper.sceneToLoad;
+#endif
         StartCoroutine(WaitForInitializers());
     }
 
