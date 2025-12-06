@@ -25,7 +25,7 @@ public class TranslateText : MonoBehaviour
     }
     private void Translate()
     {
-        displayText.text = LanguageDataBase.Instance.GetTranslation(translationKey, fallback);
-        DebugHandler.Log($"TEXT TRANSLATED [{LanguageDataBase.Instance.selectedLanguage}]");
+        displayText.text = LanguageDatabase.Instance.GetTranslation(translationKey, fallback);
+        DebugHandler.Log($"TEXT TRANSLATED [{LanguageDatabase.Instance._selectedLanguage}]");
     }
 }

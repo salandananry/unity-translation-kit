@@ -7,7 +7,8 @@ public class LanguageSelector : MonoBehaviour
 
     public void ChangeLanguage(string selectedLangauge)
     {
-        LanguageDataBase.Instance.selectedLanguage = selectedLangauge;
+        LanguageDatabase.Instance._selectedLanguage = selectedLangauge;
+        LanguageDatabase.Instance.SaveTranslationData();
         OnLanguageChanged?.Invoke();
     }
 }
