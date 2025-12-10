@@ -1,4 +1,4 @@
-# SET UP <br>
+# SET UP [ WORK IN PROGRESS ]<br>
 # TABLE OF CONTENTS <br>
 - [Acquire Google Sheets API key](#acquire-google-sheets-api-key)
 - [Acquire Spreadsheet ID](#acquire-spreadsheet-id)
