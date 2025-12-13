@@ -12,7 +12,7 @@ public class LanguageFileData
     public Dictionary<string, Dictionary<string, string>> translations;
 }
 
-public class LanguageDatabase : MonoBehaviour, IInitializer
+public class LanguageDatabase : MonoBehaviour
 {
     public static event Action OnInitalized;
     public static LanguageDatabase Instance { get; private set; }
