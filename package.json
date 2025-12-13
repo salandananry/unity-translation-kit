@@ -1,0 +1,11 @@
+{
+  "name": "com.raphael.unitytranslationkit",
+  "version": "0.0.0",
+  "displayName": "Unity Translation Kit",
+  "description": "A robust translation system for Unity games using the Google Sheets API.",
+  "keywords": [
+    "localization",
+    "translation",
+    "language"
+  ]
+}

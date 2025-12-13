@@ -863,7 +863,7 @@ GameObject:
   - component: {fileID: 813983005}
   - component: {fileID: 813983007}
   m_Layer: 5
-  m_Name: '#1 (No Error)'
+  m_Name: '#1 (No Error) [TranslateText.cs]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1846,7 +1846,7 @@ GameObject:
   - component: {fileID: 1170252898}
   - component: {fileID: 1170252900}
   m_Layer: 5
-  m_Name: '#2 (Missing Translation)'
+  m_Name: '#2 (Missing Translation) [TranslateText.cs]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1892,7 +1892,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello (Fallback)
+  m_text: Hello
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1919,7 +1919,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.9
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2608,7 +2608,7 @@ GameObject:
   - component: {fileID: 1910936467}
   - component: {fileID: 1910936468}
   m_Layer: 5
-  m_Name: Selections
+  m_Name: 'Selections [LanguageSelector.cs]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2662,7 +2662,7 @@ GameObject:
   - component: {fileID: 1977744305}
   - component: {fileID: 1977744307}
   m_Layer: 5
-  m_Name: '#2 (Missing Key)'
+  m_Name: '#2 (Missing Key) [TranslateText.cs]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2708,7 +2708,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello (Fallback)
+  m_text: Hello
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2735,7 +2735,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.9
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

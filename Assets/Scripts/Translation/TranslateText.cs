@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class TranslateText : MonoBehaviour
@@ -16,15 +17,24 @@ public class TranslateText : MonoBehaviour
     }
     private void OnEnable()
     {
-        Translate();
+        if (LanguageDatabase.Instance != null && LanguageDatabase.Instance.IsInitialized)
+        {
+            Translate();
+        }
+        else
+        {
+            LanguageDatabase.OnInitalized += Translate;
+        }
         LanguageSelector.OnLanguageChanged += Translate;
     }
     private void OnDisable()
     {
+        LanguageDatabase.OnInitalized -= Translate;
         LanguageSelector.OnLanguageChanged -= Translate;
     }
     private void Translate()
     {
+        if (LanguageDatabase.Instance == null || !LanguageDatabase.Instance.IsInitialized) return;
         displayText.text = LanguageDatabase.Instance.GetTranslation(translationKey, fallback);
         DebugHandler.Log($"TEXT TRANSLATED [{LanguageDatabase.Instance._selectedLanguage}]");
     }
