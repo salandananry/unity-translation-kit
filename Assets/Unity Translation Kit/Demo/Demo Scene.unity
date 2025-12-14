@@ -863,7 +863,7 @@ GameObject:
   - component: {fileID: 813983005}
   - component: {fileID: 813983007}
   m_Layer: 5
-  m_Name: '#1 (No Error)'
+  m_Name: 'Case 1 (No Error) [ TranslateText.cs ]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1000,8 +1000,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2502a901e2efe3f40a24dca2dd7d77c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TranslateText
-  translationKey: hello_key
-  fallback: Hello (Fallback)
+  translationKey: insert_key_here
+  fallback: 'Hello [ Fallback ]'
+--- !u!1 &857191757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 857191759}
+  - component: {fileID: 857191758}
+  m_Layer: 0
+  m_Name: LanguageDatabase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &857191758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857191757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb59793df5478e04db85ec5942b49780, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LanguageDatabase
+  apiKey: insert-api-key (Do no push your api key to your repo)
+  spreadSheetID: insert-spread-sheet-id
+  fileName: insert-file-name
+  _selectedLanguage: 'insert-default-language (Ex: en | English)'
+--- !u!4 &857191759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857191757}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &889387550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,7 +1199,7 @@ GameObject:
   - component: {fileID: 901353355}
   - component: {fileID: 901353354}
   m_Layer: 5
-  m_Name: jp
+  m_Name: 'jp [ LanguageSelector.ChangeLanguage ]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1846,7 +1894,7 @@ GameObject:
   - component: {fileID: 1170252898}
   - component: {fileID: 1170252900}
   m_Layer: 5
-  m_Name: '#2 (Missing Translation)'
+  m_Name: 'Case 3 (Missing Translation) [ TranslateText.cs ]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1892,7 +1940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello (Fallback)
+  m_text: Hello
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1919,7 +1967,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.9
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1983,8 +2031,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2502a901e2efe3f40a24dca2dd7d77c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TranslateText
-  translationKey: hello_key_missing_translation
-  fallback: Hello (Fallback)
+  translationKey: insert_key_here
+  fallback: 'Hello [ Fallback ]'
 --- !u!1 &1348384299
 GameObject:
   m_ObjectHideFlags: 0
@@ -2037,7 +2085,7 @@ GameObject:
   - component: {fileID: 1484371966}
   - component: {fileID: 1484371965}
   m_Layer: 5
-  m_Name: es
+  m_Name: 'es [ LanguageSelector.ChangeLanguage ]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2170,7 +2218,7 @@ GameObject:
   - component: {fileID: 1770310859}
   - component: {fileID: 1770310858}
   m_Layer: 5
-  m_Name: kr
+  m_Name: 'kr [ LanguageSelector.ChangeLanguage ]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2477,7 +2525,7 @@ GameObject:
   - component: {fileID: 1908435704}
   - component: {fileID: 1908435703}
   m_Layer: 5
-  m_Name: en
+  m_Name: 'en [ LanguageSelector.ChangeLanguage ]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2608,7 +2656,7 @@ GameObject:
   - component: {fileID: 1910936467}
   - component: {fileID: 1910936468}
   m_Layer: 5
-  m_Name: Selections
+  m_Name: 'Selections [ LanguageSelector.cs]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2662,7 +2710,7 @@ GameObject:
   - component: {fileID: 1977744305}
   - component: {fileID: 1977744307}
   m_Layer: 5
-  m_Name: '#2 (Missing Key)'
+  m_Name: 'Case 2 (Missing Key) [ TranslateText.cs ]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2708,7 +2756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello (Fallback)
+  m_text: Hello
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2735,7 +2783,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.9
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2800,7 +2848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TranslateText
   translationKey: 
-  fallback: Hello (Fallback)
+  fallback: 'Hello [ Fallback ]'
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2809,3 +2857,4 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 696496945}
   - {fileID: 977542661}
+  - {fileID: 857191759}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using UnityEngine;
+using System;
 
 [System.Serializable]
 public class LanguageFileData
@@ -11,8 +12,9 @@ public class LanguageFileData
     public Dictionary<string, Dictionary<string, string>> translations;
 }
 
-public class LanguageDatabase : MonoBehaviour, IInitializer
+public class LanguageDatabase : MonoBehaviour
 {
+    public static event Action OnInitalized;
     public static LanguageDatabase Instance { get; private set; }
 
     [SerializeField] private string apiKey;
@@ -48,6 +50,7 @@ public class LanguageDatabase : MonoBehaviour, IInitializer
             LoadTranslationFile();
         }
         IsInitialized = true;
+        OnInitalized?.Invoke();
     }
     private async Task UpdateTranslationFile()
     {
@@ -80,7 +83,7 @@ public class LanguageDatabase : MonoBehaviour, IInitializer
     private void LoadTranslationFile()
     {
         string path = Path.Combine(Application.persistentDataPath, fileName);
-        
+
         if (!File.Exists(path)) return;
 
         string json = File.ReadAllText(path);
