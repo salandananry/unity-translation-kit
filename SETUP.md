@@ -1,7 +1,4 @@
 # SET UP [ WORK IN PROGRESS ]<br>
-# TABLE OF CONTENTS <br>
-- [Acquire Google Sheets API key](#acquire-google-sheets-api-key)
-- [Acquire Spreadsheet ID](#acquire-spreadsheet-id)
 
 <details>
   <summary><strong>Acquire Google Sheets API key</strong></summary>
@@ -53,29 +50,17 @@
 </details>
 
 <details>
-  <summary><strong>Unity set up</strong></summary>
-<details>
-  <summary><strong>Import the following scripts to your game</strong></summary>
+  <summary><strong>Unity Setup</strong></summary>
+  <details>
+    <summary><strong>Import the package</strong></summary>
+1. Go to <a href="https://github.com/salandananry/unity-translation-kit/releases"> <strong>Release</strong></a> and download the latest package. <br>
+2. Once downloaded, open your unity project > <strong>Assets</strong> > <strong>Import Package</strong> > <strong>Custom Package</strong> > and select the recently downloaded package. <br>
+  </details>
+  <details>
+    <summary><strong>Import Newtonsoft Package</strong></summary>
 
-  - LanguageDatabase.cs <br>
-  - LanguageSelector.cs <br>
-  - TranslateText.cs <br>
-  - TranslationSheet.cs <br>
-  - ConnectionStatus.cs <br>
-  - IInitializer.cs <br>
-  - AutoBootstrapper.cs <br>
-  - InitializeManager.cs <br>
-
-  - DebugHandler.cs (Optional) <br>
-  >> If you didn't import this, you will have to adjust some of the scripts to use the default debug logs. <br>
-  
-</details>
-<details>
-  <summary><strong>Import the following packages</strong></summary>
-
-  - TMP Essentials <br>
-  - Newtonsoft.Json <br>
-  > com.unity.nuget.newtonsoft-json
+> Go to <strong>Window</strong> > <strong>Package Manager</strong> > <strong>Click the + sign (top left)</strong> > <strong>Install package from git URL</strong> > Paste this <strong> com.unity.nuget.newtonsoft-json <strong> <br>
+  </details>
 </details>
 </details>
 
@@ -88,3 +73,4 @@
   > Second column and so on would be your translations for each language. <br>
   
 </details>
+
