@@ -43,7 +43,7 @@ Inside Unity, go to **"Unity Translation kit"** folder and look for the demo sce
 > > [ **PLEASE DO NOT PUSH YOUR API KEY AND SPREADSHEET ID IN YOUR REPO** ]
 
 ## Optional
-It's not required to also import **DebugHandler.cs** to your game and if you din't, you will have to edit the script to use the default "Debug.Log".
+It's not required to also import **DebugHandler.cs** to your game and if you didn't, you will have to edit the script to use the default "Debug.Log".
 
 # Changelog
 
