@@ -7,7 +7,7 @@ A robust translation system for Unity games using the Google Sheets API.
 - Go to [**Release**](https://github.com/salandananry/unity-translation-kit/releases) and download the latest **Release**.
 
 ### **ACQUIRE SPREADSHEET ID**
-- Go to **Google Sheets** and create a new blank spreadsheet or select an existing one and open it.
+- Go to **Google Sheets** and create a new blank spreadsheet or select an existing one.
 - Modify the General Access to **Anyone with the link** and the role to **Viewer**.
   > **File > Share > Share with others**
 - Select the **Copy link** button and paste the link to a notepad.
@@ -47,5 +47,10 @@ A robust translation system for Unity games using the Google Sheets API.
   > **Assets > Import Package > Custom Package > Select the Package**
 
 There is a demo scene showcasing how the system works + Small text guides
+
+## **CHANGELOG**
+#### [v0.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.0.0) — 2026-01-06
+- Initial release.
+
 
 
