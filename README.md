@@ -1,4 +1,4 @@
-# unity-translation-kit
+# unity-translation-kit [v0.0.0]
 A robust translation system for Unity games using the Google Sheets API.
 
 
