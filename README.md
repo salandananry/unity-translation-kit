@@ -1,10 +1,12 @@
 # unity-translation-kit [v0.0.0]
-A robust translation system for Unity games using the Google Sheets API.
+
+## **ABOUT**
+**Unity Translation Kit** is a Unity package that provides a robust translation system for Unity games. It uses **Google Sheets** as the source for all translation data and connects to them through the **Google Sheets API**.
 
 
 ##  **GETTING STARTED**
 ### DOWNLOAD THE PACKAGE
-- Go to [**Release**](https://github.com/salandananry/unity-translation-kit/releases) and download the latest **Release**.
+- Go to [**Release**](https://github.com/salandananry/unity-translation-kit/releases) and download the latest **Package**.
 
 ### **ACQUIRE SPREADSHEET ID**
 - Go to **Google Sheets** and create a new blank spreadsheet or select an existing one.
