@@ -54,20 +54,17 @@ There is a demo scene showcasing how the system works + Small text guides
 #### [v0.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.0.0) — 2026-01-06
 - Initial release.
 
-## **FAQ** (WIP)
-### What happens if there's a missing key or translation
-If a key or translation is missing, the system will fall back to the configured fallback value.
-### What happens if there's no internet
-If there is no internet connection:
-- The system will use the fallback value if no local cache exists
-- Otherwise, it will use the locally saved translations
-
-  > Local cache may be out of date if changes were made to the source sheet, since an internet connection is required to update the local data.
+## **Edge Cases** (WIP)
+- **Missing Translation Key**
+  > If the translation key is missing on the source sheet or inside the project, it will instead use the fallback value.
+- **No Internet connection**
+  > The system will use the fallback value if no local cache exists, otherwise it will use the locally saved translation.
+  > > Local cache may be out of date if changes were made to the source sheet, since an internet connection is required to update the local data.
 
 ### Can I use this in a commercial game?
-Yes. This project is licensed under the MIT License, which allows commercial use. See the [**LICENSE**](https://github.com/salandananry/unity-translation-kit?tab=MIT-1-ov-file) file for details.
+  > Yes. This project is licensed under the MIT License, which allows commercial use. See the [**LICENSE**](https://github.com/salandananry/unity-translation-kit?tab=MIT-1-ov-file) file for details.
 ### Does this Support Runtime Language switching?
-Yes
+  > Yes
 
 
 
