@@ -1,4 +1,4 @@
-# unity-translation-kit [v0.0.0]
+# unity-translation-kit [v0.1.0]
 
 ## **ABOUT**
 **Unity Translation Kit** is a Unity package that provides a robust translation system for Unity games. It uses **Google Sheets** as the source for all translation data and connects to them through the **Google Sheets API**.
@@ -51,6 +51,12 @@
 There is a demo scene showcasing how the system works + Small text guides
 
 ## **CHANGELOG**
+#### [v0.1.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.0) - 2026-02-13
+- Added LICENSE text file.
+- Modified LanguageDatabase.cs
+  - Renamed Method LoadTranslationFile() to LoadLocalTranslationFile().
+  - Renamed Method NormalizeTranslation() to RemoveEmptyTranslations().
+
 #### [v0.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.0.0) — 2026-01-06
 - Initial release.
 
