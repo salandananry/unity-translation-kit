@@ -60,17 +60,18 @@ There is a demo scene showcasing how the system works + Small text guides
 #### [v0.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.0.0) — 2026-01-06
 - Initial release.
 
-## **Edge Cases** (WIP)
-- **Missing Translation Key**
-  > If the translation key is missing on the source sheet or inside the project, it will instead use the fallback value.
-- **No Internet connection**
-  > The system will use the fallback value if no local cache exists, otherwise it will use the locally saved translation.
-  > > Local cache may be out of date if changes were made to the source sheet, since an internet connection is required to update the local data.
+## **Note**
+### Q: Does it support offline usage?
+`A: Yes, Translations are saved locally after the first fetch, so the package works offline. An internet connection is only needed initially to download or update the data.`
 
-### Can I use this in a commercial game?
-  > Yes. This project is licensed under the MIT License, which allows commercial use. See the [**LICENSE**](https://github.com/salandananry/unity-translation-kit?tab=MIT-1-ov-file) file for details.
-### Does this Support Runtime Language switching?
-  > Yes
+### Q: Can I use this?
+`A: Yes, This package is under the MIT License, which allows free use in both non-commercial and commercial projects.` [**LICENSE**](https://github.com/salandananry/unity-translation-kit?tab=MIT-1-ov-file).
 
+### Q: Does this Support Runtime Language switching?
+`A: Yes.`
 
+### Q: Can I use multiple sheets?
+`A: Yes, It’s recommended for better organization. All sheets in the spreadsheet are automatically fetched.`
 
+### Q: What happens if a translation is missing?
+`A: The system uses the fallback text you provide.`
