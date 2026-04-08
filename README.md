@@ -62,7 +62,7 @@ There is a demo scene showcasing how the system works + Small text guides
 
 ## **Note**
 ### Q: Does it support offline usage?
-`A: Yes, Translations are saved locally after the first fetch, so the package works offline. An internet connection is only needed initially to download or update the data.`
+`Yes — after the initial download. The package requires an internet connection the first time to fetch translation data, but once cached locally, it works fully offline. Internet is only needed again when updating translations.`
 
 ### Q: Can I use this?
 `A: Yes, This package is under the MIT License, which allows free use in both non-commercial and commercial projects.` [**LICENSE**](https://github.com/salandananry/unity-translation-kit?tab=MIT-1-ov-file).
