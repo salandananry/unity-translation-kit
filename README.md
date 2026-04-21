@@ -76,4 +76,4 @@ There is a demo scene showcasing how the system works + Small text guides
 ### Q: What happens if a translation is missing?
 `A: The system uses the fallback text you provide.`
 
-⚠️ **`IMPORTANT: Never upload your API key or Spreadsheet ID to your repository. Keep them private and secure.`** ⚠️
+⚠️`IMPORTANT: Never upload your API key or Spreadsheet ID to your repository. Keep them private and secure.`⚠️
