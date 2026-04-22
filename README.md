@@ -51,6 +51,9 @@
 There is a demo scene showcasing how the system works + Small text guides
 
 ## **CHANGELOG**
+#### [v0.1.1](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.1) - 2026-04-22
+- Modified TranslationSheet.cs
+  - Fixed an issue where, if there is an empty row between two translations in Google Sheets, the system would not continue retrieving the remaining translations after that empty row.
 #### [v0.1.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.0) - 2026-02-13
 - Added LICENSE text file.
 - Modified LanguageDatabase.cs
