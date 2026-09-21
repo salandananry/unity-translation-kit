@@ -1,7 +1,10 @@
-# unity-translation-kit [v0.1.1]
+# unity-translation-kit [v1.0.0]
+> `This Unity package was built using Unity Editor 6000.0.64f1.`
 
 ## **ABOUT**
-**Unity Translation Kit** is a Unity package that provides a robust translation system for Unity games. It uses **Google Sheets** as the source for all translation data and connects to them through the **Google Sheets API**.
+Unity Translation Kit is a Unity package that provides a translation system for Unity games.
+
+Translations are downloaded during Editor Play Mode, saved locally, and included in the final build for runtime use without requiring an internet connection.
 
 
 ##  **SET UP GUIDE**
@@ -34,7 +37,7 @@
   > **Navigation menu > APIs & Services > Credentials**
 - Create **API key**.
   > **Create credentials > API key > Create**
-  >> Option: Under API Restrictions, you can restrict the key and select Google Sheets API.
+  >> Recommended: Under API Restrictions, you can restrict the key and select Google Sheets API.
 
 ### **Set Up Unity**
 - Create a new unity project or open an existing one.
@@ -47,36 +50,26 @@
   > **Edit > Project Settings > TextMesh Pro > Import TMP Essentials**
 - Import the **Package**
   > **Assets > Import Package > Custom Package > Select the Package**
+- Configure the Translation Editor
+  > Unity Translation Kit > Scripts > Editor > translation-editor-config.json 
+  >> Recommended: Add translation-editor-config.json to .gitignore to keep your API key and Spreadsheet ID private.
 
-There is a demo scene showcasing how the system works + Small text guides
 
 ## **CHANGELOG**
-#### [v0.1.1](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.1) - 2026-04-22
+### [v1.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v1.0.0) - 21-09-2026
+- Full Revamp of the system.
+  - Now, translation data is only downloaded during Editor Play Mode or development. The data is saved locally and included in the build, without exposing the API key or Spreadsheet ID.
+#### [v0.1.1](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.1) - 22-04-2026
 - Modified TranslationSheet.cs
   - Fixed an issue where, if there is an empty row between two translations in Google Sheets, the system would not continue retrieving the remaining translations after that empty row.
-#### [v0.1.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.0) - 2026-02-13
+#### [v0.1.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.0) - 13-02-2026
 - Added LICENSE text file.
 - Modified LanguageDatabase.cs
   - Renamed Method LoadTranslationFile() to LoadLocalTranslationFile().
   - Renamed Method NormalizeTranslation() to RemoveEmptyTranslations().
 
-#### [v0.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.0.0) — 2026-01-06
+#### [v0.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.0.0) — 06-01-2026
 - Initial release.
 
-## **Note**
-### Q: Does it support offline usage?
-`Yes — after the initial download. The package requires an internet connection the first time to fetch translation data, but once cached locally, it works fully offline. Internet is only needed again when updating translations.`
-
-### Q: Can I use this?
-`A: Yes, This package is under the MIT License, which allows free use in both non-commercial and commercial projects.` [**LICENSE**](https://github.com/salandananry/unity-translation-kit?tab=MIT-1-ov-file).
-
-### Q: Does this Support Runtime Language switching?
-`A: Yes.`
-
-### Q: Can I use multiple sheets?
-`A: Yes, It’s recommended for better organization. All sheets in the spreadsheet are automatically fetched.`
-
-### Q: What happens if a translation is missing?
-`A: The system uses the fallback text you provide.`
 
 ⚠️`IMPORTANT: Never upload your API key or Spreadsheet ID to your repository. Keep them private and secure.`⚠️
