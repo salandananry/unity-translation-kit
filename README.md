@@ -37,7 +37,7 @@ Translations are downloaded during Editor Play Mode, saved locally, and included
   > **Navigation menu > APIs & Services > Credentials**
 - Create **API key**.
   > **Create credentials > API key > Create**
-  >> Recommended: Under API Restrictions, you can restrict the key and select Google Sheets API.
+  >>⚠️Recommended: Under API Restrictions, you can restrict the key and select Google Sheets API.
 
 ### **Set Up Unity**
 - Create a new unity project or open an existing one.
@@ -52,11 +52,11 @@ Translations are downloaded during Editor Play Mode, saved locally, and included
   > **Assets > Import Package > Custom Package > Select the Package**
 - Configure the Translation Editor
   > Unity Translation Kit > Scripts > Editor > translation-editor-config.json 
-  >> Recommended: Add translation-editor-config.json to .gitignore to keep your API key and Spreadsheet ID private.
+  >>⚠️Recommended: Add translation-editor-config.json to .gitignore to keep your API key and Spreadsheet ID private.
 
 
 ## **CHANGELOG**
-### [v1.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v1.0.0) - 21-09-2026
+#### [v1.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v1.0.0) - 21-09-2026
 - Full Revamp of the system.
   - Now, translation data is only downloaded during Editor Play Mode or development. The data is saved locally and included in the build, without exposing the API key or Spreadsheet ID.
 #### [v0.1.1](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.1) - 22-04-2026
@@ -72,4 +72,4 @@ Translations are downloaded during Editor Play Mode, saved locally, and included
 - Initial release.
 
 
-⚠️`IMPORTANT: Never upload your API key or Spreadsheet ID to your repository. Keep them private and secure.`⚠️
+⚠️`IMPORTANT: Never upload your API key or Spreadsheet ID to your repository. Keep them private and secure.`
