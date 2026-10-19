@@ -1,10 +1,9 @@
-# unity-translation-kit [v1.0.0]
+# unity-translation-kit [v2.0.0]
 > `This Unity package was built using Unity Editor 6000.0.64f1.`
 
 ## **ABOUT**
 Unity Translation Kit is a Unity package that provides a translation system for Unity games.
-
-Translations are downloaded during Editor Play Mode, saved locally, and included in the final build for runtime use without requiring an internet connection.
+> Translations are fetched from Google Sheets through the Unity Editor and saved locally for offline runtime use.
 
 
 ##  **SET UP GUIDE**
@@ -50,12 +49,15 @@ Translations are downloaded during Editor Play Mode, saved locally, and included
   > **Edit > Project Settings > TextMesh Pro > Import TMP Essentials**
 - Import the **Package**
   > **Assets > Import Package > Custom Package > Select the Package**
-- Configure the Translation Editor
-  > Unity Translation Kit > Scripts > Editor > translation-editor-config.json 
+- Configure the **Translation Editor**
+  > Tools > Unity Translation Kit > Translation Window > Input the API key and Spreadsheet ID > Save Configuration > Fetch Translations
   >>⚠️Recommended: Add translation-editor-config.json to .gitignore to keep your API key and Spreadsheet ID private.
 
 
 ## **CHANGELOG**
+#### [v2.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v2.0.0) - 19-10-2026
+- Added a dedicated Editor Window for configuration management, manual translation fetching, and activity logging.
+  - Translation updates are now managed manually through a dedicated Editor Window, giving developers full control over when to fetch translations from Google Sheets.
 #### [v1.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v1.0.0) - 21-09-2026
 - Full Revamp of the system.
   - Now, translation data is only downloaded during Editor Play Mode or development. The data is saved locally and included in the build, without exposing the API key or Spreadsheet ID.
