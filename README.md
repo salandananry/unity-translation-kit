@@ -2,8 +2,9 @@
 > `This Unity package was built using Unity Editor 6000.0.64f1.`
 
 ## **ABOUT**
-Unity Translation Kit is a Unity package that provides a translation system for Unity games.
-> Translations are fetched from Google Sheets through the Unity Editor and saved locally for offline runtime use.
+Unity Translation Kit is an editor-based tool I developed to simplify translation management for Unity games using Google Sheets.
+
+The custom Editor Window lets developers configure their Google Sheets API key and spreadsheet ID, manually fetch translations, and monitor updates through an activity log. Translations are saved locally for use at runtime, including in offline builds.
 
 
 ##  **SET UP GUIDE**
