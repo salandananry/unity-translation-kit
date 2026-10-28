@@ -1,4 +1,4 @@
-# unity-translation-kit [v2.0.0]
+# unity-translation-kit [v2.1.0]
 > `This Unity package was built using Unity Editor 6000.0.64f1.`
 
 ## **ABOUT**
@@ -51,27 +51,30 @@ The custom Editor Window lets developers configure their Google Sheets API key a
 - Import the **Package**
   > **Assets > Import Package > Custom Package > Select the Package**
 - Configure the **Translation Editor**
-  > Tools > Unity Translation Kit > Translation Window > Input the API key and Spreadsheet ID > Save Configuration > Fetch Translations
-  >>⚠️Recommended: Add translation-editor-config.json to .gitignore to keep your API key and Spreadsheet ID private.
+  > Tools > Unity Translation Kit > Translation Window > Input the API key and Spreadsheet ID
+  >><del>⚠️Recommended: Add translation-editor-config.json to .gitignore to keep your API key and Spreadsheet ID private.</del>
 
 
-## **CHANGELOG**
-#### [v2.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v2.0.0) - 19-10-2026
+## **CHANGELOGS**
+#### [v2.1.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v2.1.0) - October 28, 2026
+- Removed configuration file dependency by passing credentials directly from the Editor Window to the translation updater.
+- Organized the Editor menu under Tools/Salandananry/Unity Translation Kit/Translation Window.
+#### [v2.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v2.0.0) - October 19, 2026
 - Added a dedicated Editor Window for configuration management, manual translation fetching, and activity logging.
   - Translation updates are now managed manually through a dedicated Editor Window, giving developers full control over when to fetch translations from Google Sheets.
-#### [v1.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v1.0.0) - 21-09-2026
+#### [v1.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v1.0.0) - September 21, 2026
 - Full Revamp of the system.
   - Now, translation data is only downloaded during Editor Play Mode or development. The data is saved locally and included in the build, without exposing the API key or Spreadsheet ID.
-#### [v0.1.1](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.1) - 22-04-2026
+#### [v0.1.1](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.1) - April 22, 2026
 - Modified TranslationSheet.cs
   - Fixed an issue where, if there is an empty row between two translations in Google Sheets, the system would not continue retrieving the remaining translations after that empty row.
-#### [v0.1.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.0) - 13-02-2026
+#### [v0.1.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.1.0) - February 13, 2026
 - Added LICENSE text file.
 - Modified LanguageDatabase.cs
   - Renamed Method LoadTranslationFile() to LoadLocalTranslationFile().
   - Renamed Method NormalizeTranslation() to RemoveEmptyTranslations().
 
-#### [v0.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.0.0) — 06-01-2026
+#### [v0.0.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v0.0.0) — January 06, 2026
 - Initial release.
 
 
