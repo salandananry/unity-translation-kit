@@ -1,24 +1,35 @@
 # unity-translation-kit [v2.1.0]
 > `This Unity package was built using Unity Editor 6000.0.64f1.`
 
-## **ABOUT**
-Unity Translation Kit is an editor-based tool I developed to simplify translation management for Unity games using Google Sheets.
-
+<details open>
+  <summary><strong>ABOUT</strong></summary>
+Unity Translation Kit is an editor-based tool I developed to simplify translation management for Unity games using Google Sheets. <br><br>
 The custom Editor Window lets developers configure their Google Sheets API key and spreadsheet ID, manually fetch translations, and monitor updates through an activity log. Translations are saved locally for use at runtime, including in offline builds.
+</details>
 
-
-##  **SET UP GUIDE**
-### Download the Package
-- Go to [**Release**](https://github.com/salandananry/unity-translation-kit/releases) and download the latest **Package**.
-
-### **Get the Spreadsheet ID**
-- Go to **Google Sheets** and create a new blank spreadsheet or select an existing one.
-- Modify the General Access to **Anyone with the link** and the role to **Viewer**.
-  > **File > Share > Share with others**
-- Select the **Copy link** button and paste the link to a notepad.
-- Your Spreadsheet ID will be between "**d/**" and "**/edit**".
-  > `https://docs.google.com/spreadsheets/d/YOUR_SPREADSHEET_ID/edit?usp=sharing`
-
+<details>
+  <summary><strong>SET UP GUIDE</strong></summary>
+  <blockquote>
+  <details>
+    <summary><strong>How to download the package</strong></summary>
+    <ul>
+      <li>Go to <a href="https://github.com/salandananry/unity-translation-kit/releases">Release</a> and download the latest <strong>Package</strong>.</li>
+    </ul>
+  </details>
+      <details>
+    <summary><strong>How to get Spreadsheet ID</strong></summary>
+    <ul>
+      <li>Go to <strong>Google Sheets</strong> and create a new blank spreadsheet (or select an existing one).</li>
+      <li>Modify the General Access to <strong>Anyone with the link</strong> and the role to <strong>Viewer</strong>.</li>
+      <li>Select the <strong>Copy link</strong> button and paste the link to a notepad.</li>
+      <li>Your Spreadsheet ID will be between <strong>"d/"</strong> and <strong>"/edit"</strong>.</li>
+      <blockquote>
+        <code>https://docs.google.com/spreadsheets/d/YOUR_SPREADSHEET_ID/edit?usp=sharing</code>
+      </blockquote>
+    </ul>
+  </details>
+  </blockquote>
+</details>
 ### **Set Up the Spreadsheet**
 - The first column contains the unique keys for each translated text.
 - The succeeding columns contain the translations for each language.
