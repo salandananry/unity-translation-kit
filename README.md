@@ -28,28 +28,50 @@ The custom Editor Window lets developers configure their Google Sheets API key a
       </blockquote>
     </ul>
   </details>
+    <details>
+      <summary><strong>How to set up Spreadsheet</strong></summary>
+      <ul>
+        <li>The first column contains the unique keys for each translated text.</li>
+        <li>The succeeding columns contain the translations for each language.</li>
+        <li>You can use multiple sheets for better organization.</li>
+        <blockquote>
+          <strong>Example Setup</strong>
+          <br>
+          <img
+            width="758"
+            height="390"
+            alt="Example Setup"
+            src="https://github.com/user-attachments/assets/7e1b8e1f-2126-4e4f-8cfc-c65526a827c0"/>
+        </blockquote>
+      </ul>
+    </details>
+  <details>
+      <summary><strong>How to get API key</strong></summary>
+    <ul>
+      <li>Go to <strong>Google Cloud Console</strong>.</li>
+      <li>Create a new project (or select an existing one).</li>
+      <li>Go to <strong>API Library</strong>.</li>
+      <blockquote>
+        <strong>Navigation menu -> APIs & Services -> Library</strong>
+      </blockquote>
+      <li>Enable <strong>Google Sheets API</strong>.</li>
+      <blockquote>
+        <strong>Under Google Workspace section -> Google Sheets API -> Enable</strong>
+      </blockquote>
+      <li>Go to <strong>Credentials</strong>.</li>
+      <blockquote>
+        <strong>Navigation menu -> APIs & Services -> Credentials</strong>
+      </blockquote>
+      <li>Create <strong>API key</strong>.</li>
+      <blockquote>
+        <strong>Create credentials -> API key -> Create</strong>
+        <br>
+        <strong>⚠️ Recommended: Under API Restrictions, you can restrict the key and select Google Sheets API ⚠️</strong>
+      </blockquote>
+    </ul>
+  </details>
   </blockquote>
 </details>
-### **Set Up the Spreadsheet**
-- The first column contains the unique keys for each translated text.
-- The succeeding columns contain the translations for each language.
-- You can use multiple sheets for better organization.
-> Example Setup
-<img width="758" height="390" alt="{ECC5F764-C3B6-4FCA-8A91-8CDA60D024B5}" src="https://github.com/user-attachments/assets/7e1b8e1f-2126-4e4f-8cfc-c65526a827c0" />
-
-### **Get the API Key**
-- Go to **Google Cloud Console**.
-- Create a new project or select an existing one
-- Go to **API Library**.
-  > **Navigation menu > APIs & Services > Library**
-- Enable **Google Sheets API**.
-  > **Under Google Workspace section > Google Sheets API > Enable**
-- Go to **Credentials**.
-  > **Navigation menu > APIs & Services > Credentials**
-- Create **API key**.
-  > **Create credentials > API key > Create**
-  >>⚠️Recommended: Under API Restrictions, you can restrict the key and select Google Sheets API.
-
 ### **Set Up Unity**
 - Create a new unity project or open an existing one.
 - Import **newtonsoft** package.
