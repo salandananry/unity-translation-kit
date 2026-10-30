@@ -70,23 +70,32 @@ The custom Editor Window lets developers configure their Google Sheets API key a
       </blockquote>
     </ul>
   </details>
+    <details>
+      <summary><strong>How to set up Unity Project</strong></summary>
+      <ul>
+        <li>Create a new unity project (or select an existing one).</li>
+        <li>Import <strong>newtonsoft</strong> package.</li>
+        <blockquote>
+          <strong>Window -> Package Manager -> install package from git url</strong>
+          <br>
+          <pre><code>com.unity.nuget.newtonsoft-json</code></pre>
+        </blockquote>
+        <li>Import <strong>TMP Essentials</strong>.</li>
+        <blockquote>
+          <strong>Edit -> Project Settings -> TextMesh Pro -> Import TMP Essentials</strong>
+        </blockquote>
+        <li>Import the <strong>Package</strong>.</li>
+        <blockquote>
+          <strong>Assets -> Import Package -> Custom Package -> Select the package</strong>
+        </blockquote>
+        <li>Configure the <strong>Translation editor window</strong></li>
+        <blockquote>
+          <strong>Tools -> Salandananry -> Unity Translation Kit -> Translation Window</strong>
+        </blockquote>
+      </ul>
+    </details>
   </blockquote>
 </details>
-### **Set Up Unity**
-- Create a new unity project or open an existing one.
-- Import **newtonsoft** package.
-  > **Window > Package Manager > install package from git URL**
-  > ```
-  > com.unity.nuget.newtonsoft-json
-  > ```
-- Import **TMP Essentials**
-  > **Edit > Project Settings > TextMesh Pro > Import TMP Essentials**
-- Import the **Package**
-  > **Assets > Import Package > Custom Package > Select the Package**
-- Configure the **Translation Editor**
-  > Tools > Unity Translation Kit > Translation Window > Input the API key and Spreadsheet ID
-  >><del>⚠️Recommended: Add translation-editor-config.json to .gitignore to keep your API key and Spreadsheet ID private.</del>
-
 
 ## **CHANGELOGS**
 #### [v2.1.0](https://github.com/salandananry/unity-translation-kit/releases/tag/v2.1.0) - October 28, 2026
