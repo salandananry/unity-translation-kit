@@ -12,13 +12,13 @@ The custom Editor Window lets developers configure their Google Sheets API key a
   <blockquote>
   <details>
     <summary><strong>How to download the package</strong></summary>
-    <ul>
+    <ol>
       <li>Go to <a href="https://github.com/salandananry/unity-translation-kit/releases">Release</a> and download the latest <strong>Package</strong>.</li>
-    </ul>
+    </ol>
   </details>
       <details>
     <summary><strong>How to get Spreadsheet ID</strong></summary>
-    <ul>
+    <ol>
       <li>Go to <strong>Google Sheets</strong> and create a new blank spreadsheet (or select an existing one).</li>
       <li>Modify the General Access to <strong>Anyone with the link</strong> and the role to <strong>Viewer</strong>.</li>
       <li>Select the <strong>Copy link</strong> button and paste the link to a notepad.</li>
@@ -26,73 +26,105 @@ The custom Editor Window lets developers configure their Google Sheets API key a
       <blockquote>
         <code>https://docs.google.com/spreadsheets/d/YOUR_SPREADSHEET_ID/edit?usp=sharing</code>
       </blockquote>
-    </ul>
+    </ol>
   </details>
     <details>
       <summary><strong>How to set up Spreadsheet</strong></summary>
-      <ul>
+      <ol>
         <li>The first column contains the unique keys for each translated text.</li>
         <li>The succeeding columns contain the translations for each language.</li>
         <li>You can use multiple sheets for better organization.</li>
         <blockquote>
-          <strong>Example Setup</strong>
+          <em>Set up example (Click image to expand)</em>
           <br>
-          <img
-            width="758"
-            height="390"
-            alt="Example Setup"
-            src="https://github.com/user-attachments/assets/7e1b8e1f-2126-4e4f-8cfc-c65526a827c0"/>
+          <img 
+            width="601" 
+            height="368" 
+            alt="image" 
+            src="https://github.com/user-attachments/assets/cb9a7f65-a73e-43e1-ac45-0c74e6009b3e" />
         </blockquote>
-      </ul>
+      </ol>
     </details>
   <details>
       <summary><strong>How to get API key</strong></summary>
-    <ul>
+    <ol>
       <li>Go to <strong>Google Cloud Console</strong>.</li>
       <li>Create a new project (or select an existing one).</li>
       <li>Go to <strong>API Library</strong>.</li>
       <blockquote>
-        <strong>Navigation menu -> APIs & Services -> Library</strong>
+        Navigation menu -> APIs & Services -> Library
       </blockquote>
       <li>Enable <strong>Google Sheets API</strong>.</li>
       <blockquote>
-        <strong>Under Google Workspace section -> Google Sheets API -> Enable</strong>
+        Under Google Workspace section -> Google Sheets API -> Enable
       </blockquote>
       <li>Go to <strong>Credentials</strong>.</li>
       <blockquote>
-        <strong>Navigation menu -> APIs & Services -> Credentials</strong>
+        Navigation menu -> APIs & Services -> Credentials
       </blockquote>
       <li>Create <strong>API key</strong>.</li>
       <blockquote>
-        <strong>Create credentials -> API key -> Create</strong>
+        Create credentials -> API key -> Create
         <br>
         <strong>⚠️ Recommended: Under API Restrictions, you can restrict the key and select Google Sheets API ⚠️</strong>
       </blockquote>
-    </ul>
+    </ol>
   </details>
     <details>
       <summary><strong>How to set up Unity Project</strong></summary>
-      <ul>
+      <ol>
         <li>Create a new unity project (or select an existing one).</li>
         <li>Import <strong>newtonsoft</strong> package.</li>
         <blockquote>
-          <strong>Window -> Package Manager -> install package from git url</strong>
+          Window -> Package Manager -> install package from git url
           <br>
           <pre><code>com.unity.nuget.newtonsoft-json</code></pre>
         </blockquote>
         <li>Import <strong>TMP Essentials</strong>.</li>
         <blockquote>
-          <strong>Edit -> Project Settings -> TextMesh Pro -> Import TMP Essentials</strong>
+          Edit -> Project Settings -> TextMesh Pro -> Import TMP Essentials
         </blockquote>
         <li>Import the <strong>Package</strong>.</li>
         <blockquote>
-          <strong>Assets -> Import Package -> Custom Package -> Select the package</strong>
+          Assets -> Import Package -> Custom Package -> Select the package
         </blockquote>
         <li>Configure the <strong>Translation editor window</strong></li>
         <blockquote>
-          <strong>Tools -> Salandananry -> Unity Translation Kit -> Translation Window</strong>
+          Tools -> Salandananry -> Unity Translation Kit -> Translation Window
         </blockquote>
-      </ul>
+        <li><strong>Language Selector</strong> set up</li>
+        <blockquote>
+          <strong>Attach LanguageSelector script to your Language Selection UI</strong>
+          <blockquote>
+            <em>Set up example (Click image to expand)</em>
+            <br>
+          <img 
+            width="478" 
+            height="67" 
+            alt="Example set up" 
+            src="https://github.com/user-attachments/assets/ed33a82c-7a7b-4609-ac76-91dc41c6d78b" />
+          </blockquote>
+          <strong>Configure Language Selection Buttons</strong>
+          <blockquote>
+            <ol type ="a">
+              <li>For each language button, add an entry to its On Click() event.</li>
+              <li>Assign the GameObject containing the LanguageSelector script to the object field.</li>
+              <li>Select LanguageSelector -> ChangeLanguage (string) from the function dropdown.</li>
+              <li>Enter the language code in the string field (e.g, english, japanese, indonesian etc.)</li>
+            <strong>Note: The language code must exactly match the corresponding language name/code used in your Google Sheets.</strong>
+            <blockquote>
+              <em>Set up example (Click image to expand)</em>
+              <br>
+              <img 
+                width="942" 
+                height="241" 
+                alt="image" 
+                src="https://github.com/user-attachments/assets/ad74ef39-d674-4e62-b706-5e1889796df3" />
+            </blockquote>
+            </ol>
+          </blockquote>
+        </blockquote>
+      </ol>
     </details>
   </blockquote>
 </details>
